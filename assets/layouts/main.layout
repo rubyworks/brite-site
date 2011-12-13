@@ -39,7 +39,7 @@ stencil: liquid
   <![endif]-->
 
   <!-- for sytnax higlighting -->
-  <link  rel="stylesheet" type="text/css" href="/assets/styles/syntax.css" />
+  <!-- <link  rel="stylesheet" type="text/css" href="/assets/styles/syntax.css" /> -->
 
   <!-- general purpose style classes -->
   <link rel="stylesheet" type="text/css" href="/assets/styles/custom.css" />
@@ -55,23 +55,27 @@ stencil: liquid
 </head>
 
 <body>
+<div id="container">
 
 <div id="header">
 <div class="inner">
   <div class="title">
-    <img class="logo" src="/assets/images/logo.png" width="480px" align="top" />
-  </div>
-  <div id="nav" style="text-align: left;">
-    <ul>
-    <li><a href="{{root}}index.html">Home</a></li>
-    <li><a href="{{root}}tags.html">Find</a></li>
-    <li><a href="http://rubyworks.github.org/brite/">Brite</a></li>
-    </ul>
+    <img class="logo" src="/assets/images/logo.png" width="480px" align="top" alt="My Brite Site" />
   </div>
 </div>
 </div>
 
-<div id="container">
+<div id="nav">
+<div class="inner">
+  <ul>
+  <li><a href="{{root}}index.html">Home</a></li>
+  <li><a href="{{root}}tags.html">Find</a></li>
+  <li><a href="http://rubyworks.github.org/brite/">Brite</a></li>
+  </ul>
+</div>
+</div>
+
+<div id="article">
 <div class="inner">
   {{ content }}
 </div>

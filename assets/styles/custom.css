@@ -2,7 +2,7 @@
 
 body {
   margin: 0; padding: 0;
-  font-size: 80%; font-family: sans-serif, Arial; 
+  font-size: 10pt; font-family: sans-serif, Arial; 
 }
 
 a { 
@@ -30,7 +30,7 @@ h5 { font-size: 1.0em; font-weight: bold; margin: 0 0 1.5em 0; }
 h6 { font-size: 1.0em; font-weight: bold; }
 
 h1,h2 {
-  padding-top: 30px;
+  padding-top: 10px;
   color: #44ff44;
 }
 
@@ -60,13 +60,13 @@ p {
 .heading .date  { font-size: 0.7em; }
 
 .inner {
+  width: 720px;
+  margin: 0 auto;
 }
 
 /* ID */
 
-#main {
-  width: 600px;
-  margin: 0 auto;
+#container {
 }
 
 #header {
@@ -84,7 +84,8 @@ p {
 }
 
 #header .title {
-  font-size:150px; text-align:center; font-weight:bold; line-height:150px; letter-spacing:10px; 
+  height: 70px; padding: 50px 0;
+  font-size: 5em; text-align:center; font-weight:bold; letter-spacing:10px; 
 }
 
 #nav {
@@ -109,8 +110,8 @@ p {
 }
 
 #footer {
-  width:560px; padding:20px; margin: 0 auto;
+  padding: 1em;
   color:white; background:url(/assets/images/bg.jpg) center repeat-x;
-  font-size:8px; font-weight:bold; 
+  font-size:8px; font-weight:bold;
 }
 

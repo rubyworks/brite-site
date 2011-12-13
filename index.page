@@ -13,7 +13,7 @@ stencil : liquid
       <span class="date">{{ post.date | date_to_string }}</span>
       <a class="title" href="{{ post.url }}">{{ post.title }}</a>
     </div>
-    {{ post.content }}
+    {{ post.summary }}
     <!-- <small>Written by {{ post.author }}</small> -->
   </div>
   <br/>
