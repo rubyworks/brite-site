@@ -1,3 +1,28 @@
 ---
-url    : http://___URL___.com
-stencil: liquid
+# default authors name
+author: Anonymous
+
+# site's absolute url; generally not used, but needed in some cases
+url: http://___URL___.com
+
+# default stencil engine
+stencil     : liquid
+
+# default section format
+format      : html
+
+# layout to use for pages
+page_layout : page
+
+# layout to use for posts
+post_layout : post
+
+# location to save pages
+page_slug   : "$path"
+
+# location to save posts
+post_slug   : "$post"
+
+# where to find layout files
+layout_path : assets/layouts
+
