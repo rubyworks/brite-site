@@ -49,11 +49,9 @@ stencil: liquid
 
   <!-- jquery 1.7.1 -->
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script>
-    $(document).ready(function(){
-       // Your code here
-    });
-  </script>
+
+  <!-- put your javascript code in main.js -->
+  <script src="/assets/scripts/main.js"></script>
 </head>
 
 <body>
