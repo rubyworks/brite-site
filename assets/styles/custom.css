@@ -31,7 +31,6 @@ h6 { font-size: 1.0em; font-weight: bold; }
 
 h1,h2 {
   padding-top: 10px;
-  color: #44ff44;
 }
 
 h1:first-child {
@@ -48,8 +47,7 @@ p {
 .heading { font-size: 2em; }
 
 .heading .title {
-  font-size: 1.3em;
-  font-weight: bold; 
+  font-size: 1.3em; font-weight: bold; 
   color: #ff4455;
 }
 
@@ -57,7 +55,9 @@ p {
   color: #2454ad;
 }
 
-.heading .date  { font-size: 0.7em; }
+.heading .date  { font-size: 0.7em; margin-right: 1em; border: 1px solid #ccc; }
+.heading .date .year  { background: url(/assets/images/bg.jpg) bottom; padding: 0 3px; text-align: center; }
+.heading .date .month { background: #fff;  padding: 0 3px; text-align: center; }
 
 .inner {
   width: 720px;
@@ -84,34 +84,38 @@ p {
 }
 
 #header .title {
-  height: 70px; padding: 50px 0;
+  height: 70px; padding: 60px 0;
   font-size: 5em; text-align:center; font-weight:bold; letter-spacing:10px; 
 }
 
 #nav {
-  width: 100%; height: 20px;
+  width:100%; height:30px;
   font-size:12px; font-weight:bold;
-  background: white; opacity: 0.9;
+  background:white; opacity:0.8;
 }
 
 #nav ul {
-  margin: 0 0 0 50px;
+  margin:0; padding:0;
   list-style: none;
 }
 
 #nav li {
   width: 100px; float: left;
   border-left: 1px solid #ccc; border-right: 1px solid #ccc;
-  line-height: 20px; text-align: center; 
+  line-height: 25px; text-align: center; 
 }
 
 #nav li:hover {
   background: #ccc;
 }
 
+#article {
+  padding: 2em 0;
+}
+
 #footer {
-  padding: 1em;
+  padding: 2em;
   color:white; background:url(/assets/images/bg.jpg) center repeat-x;
-  font-size:8px; font-weight:bold;
+  font-size:9px; font-weight:bold;
 }
 

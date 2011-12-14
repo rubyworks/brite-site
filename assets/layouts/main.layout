@@ -85,6 +85,7 @@ stencil: liquid
 
 <div id="footer">
 <div class="inner">
+  <div style="float:right;">It's a <a href="http://rubyworks.github.com/brite">Brite</a> Site!</div>
   Copyright (c) 2012 {{ author }}
 </div>
 </div>

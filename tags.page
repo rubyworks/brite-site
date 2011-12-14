@@ -4,8 +4,6 @@ layout  : page
 stencil : liquid
 ---
 
-<div class="page">
-
 {% for tag in site.tags %}
   <div class="">
     <div class="heading">
@@ -20,6 +18,4 @@ stencil : liquid
   </div>
   <br/>
 {% endfor %}
-
-</div>
 
