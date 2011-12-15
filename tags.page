@@ -1,21 +1,22 @@
 ---
+
 title   : Site Index
 layout  : page
-stencil : liquid
+
 ---
 
-{% for tag in site.tags %}
+<% for tag in site.tags %>
   <div class="">
     <div class="heading">
-      {{ tag }}
+      <%= tag %>
     </div>
-  {% for post in site.posts_by_tag[tag] %}
+  <% for post in site.posts_by_tag[tag] %>
     <div class="" style="margin: 0; padding: 0;">
-      <span class="date">{{ post.date | date_to_string }}</span>
-      <a class="" href="{{ post.path }}">{{ post.title }}</a>
+      <span class="date"><%= post.date %></span>
+      <a class="" href="<%= post.path %>"><%= post.title %></a>
     </div>
-  {% endfor %}
+  <% end %>
   </div>
   <br/>
-{% endfor %}
+<% end %>
 

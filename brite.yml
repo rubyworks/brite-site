@@ -6,7 +6,7 @@ author: Anonymous
 url: http://___URL___.com
 
 # default stencil engine
-stencil     : liquid
+stencil     : rhtml
 
 # default section format
 format      : html
@@ -25,4 +25,19 @@ post_slug   : "$post"
 
 # where to find layout files
 layout_path : assets/layouts
+
+# where to find partials files
+partial_path : assets/partials
+
+# google analytics plugin
+google_analytics: UA-2883355-2
+
+# fill in shortname for disqus
+disqus:
+  shortname: ~
+  num_items: 5
+  hide_mods: 0
+  color: blue
+  default_tab: people
+  excerpt_length: 200
 

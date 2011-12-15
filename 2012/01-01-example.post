@@ -24,22 +24,22 @@ layout to help get you started.
 
 A few things to notice:
 
-*    The .rsync-filter file is designed to be used with
-     rsync when uploading your website. You will see
-     it contains some pretty important exclusions!
-
 *    General configuration of Brite is done in the
-     .config/brite.yaml file.
+     `brite.yaml` file.
 
-*    Post do not need to be under year/month directories,
-     they just need to end in .post. But it is a nice
+*    Posts do not need to be under year directories,
+     they just need to end in `.post`. But it is a nice
      place to put them.
 
-*    atom.page actually generate atom.xml not atom.html
-     becuase of a YAML front matter setting.
+*    The `atom.page` file actually generates `atom.xml` not
+     atom.html becuase of a YAML front matter setting.
+
+*    The .rsync-filter file is designed to be used with
+     rsync when uploading your website. Delete it if you
+     will not be using rsync, or edit it to suit your host.
 
 Brite still needs development to reach it's full potential.
-Please consider contributing at [GitHub](http://github/proutils/brite/)
+Please consider contributing at [GitHub](http://github/rubyworks/brite)
 
 That's it for now. Enjoy!
 

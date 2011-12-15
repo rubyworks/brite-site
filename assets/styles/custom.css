@@ -2,7 +2,7 @@
 
 body {
   margin: 0; padding: 0;
-  font-size: 10pt; font-family: sans-serif, Arial; 
+  font-size: 11pt; font-family: sans-serif, Arial; 
 }
 
 a { 
@@ -38,8 +38,17 @@ h1:first-child {
 }
 
 p {
-  line-height: 1.6em; 
+  font-family: times;
+  line-height: 1.5em;
   color: #222;
+}
+
+li p {
+  line-height: 1.2em;
+}
+
+pre {
+  padding: 1em 2em;
 }
 
 /* CLASSES */
@@ -47,7 +56,7 @@ p {
 .heading { font-size: 2em; }
 
 .heading .title {
-  font-size: 1.3em; font-weight: bold; 
+  font-size: 1.4em; font-weight: bold; 
   color: #ff4455;
 }
 
@@ -55,7 +64,12 @@ p {
   color: #2454ad;
 }
 
-.heading .date  { font-size: 0.7em; margin-right: 1em; border: 1px solid #ccc; }
+.heading .date  { 
+  margin-right: 1em; 
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc; -moz-box-shadow: 5px 5px 5px #ccc;
+  font-size: 0.6em; 
+}
 .heading .date .year  { background: url(/assets/images/bg.jpg) bottom; padding: 0 3px; text-align: center; }
 .heading .date .month { background: #fff;  padding: 0 3px; text-align: center; }
 
@@ -92,6 +106,8 @@ p {
   width:100%; height:30px;
   font-size:12px; font-weight:bold;
   background:white; opacity:0.8;
+  border: 1px solid #ccc;
+  background: url(/assets/images/bg.jpg) bottom repeat-x;
 }
 
 #nav ul {
@@ -101,16 +117,25 @@ p {
 
 #nav li {
   width: 100px; float: left;
-  border-left: 1px solid #ccc; border-right: 1px solid #ccc;
-  line-height: 25px; text-align: center; 
+  height: 30px; border-left: 1px solid #ccc; border-right: 1px solid #ccc;
+  line-height: 26px; text-align: center; 
 }
-
-#nav li:hover {
-  background: #ccc;
-}
+#nav li:hover { background: #000; color: #fff; }
+#nav li a { color: inherit; height: 30px; }
 
 #article {
   padding: 2em 0;
+}
+
+#post-nav {
+  float: right;
+  font-size: 0.8em;
+  margin: 2em 0;
+}
+
+#comments {
+  clear: both;
+  margin: 2em 0;
 }
 
 #footer {

@@ -1,0 +1,10 @@
+---
+---
+
+<% if config.disqus['shortname'] %>
+
+<script type="text/javascript" src="http://<%= config.disqus['shortname'] %>.disqus.com/combination_widget.js?num_items=<%= config.disqus['num_items'] || 5 %>&hide_mods=<%= config.disqus['hide_mods'] || 0 %>&color=<%= config.disqus['color'] || 'blue' %>&default_tab=<%= config.disqus['default_tab'] || 'people' %>&excerpt_length=<%= config.disqus['excerpt_length'] || 200 %>"></script>
+<a href="http://disqus.com/">Powered by Disqus</a>
+
+<% end %>
+

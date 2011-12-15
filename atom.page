@@ -1,6 +1,5 @@
 ---
 layout    : false
-stencil   : liquid
 extension : xml
 
 --- html

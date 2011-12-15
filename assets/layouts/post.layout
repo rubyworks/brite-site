@@ -1,27 +1,32 @@
 ---
-stencil: liquid
+
 layout:  main
 
 --- html
 
 <div class="heading">
   <div class="date" style="float: left;">
-    <div class="year">{{ date  | date: '%Y' }}</div>
-    <div class="month">{{ date | date: '%m %d' }}</div>
+    <div class="year"><%= date.strftime('%Y') %></div>
+    <div class="month"><%= date.strftime('%m-%d') %></div>
   </div>
-  <a class="title" href="{{ url }}">{{ title }}</a>
+  <a class="title" href="<%= url %>"><%= title %></a>
 </div>
 
-{{ content }}
+<%= content %>
 
-<small>Written by {{ author }}, {{ date | date_to_string }}</small>
+<small>Written by <%= author %>, <%= date %></small>
 
-<ul class="posts">
-  {% assign p = previous_post %}{% if p %}
-  <li><span>Previous: {{ p.date | date_to_string }}</span> &raquo; <a href="{{ p.url }}">{{ p.title }}</a></li>
-  {% endif %}
-  {% assign p = next_post %}{% if p %}
-  <li><span> Next: {{ p.date | date_to_string }}</span> &raquo; <a href="{{ p.url }}">{{ p.title }}</a></li>
-  {% endif %}
-</ul>
+<div id="post-nav">
+  <% if p = previous_post %>
+    &lt;&lt; <a href="/<%= p.route %>">Back <%= p.date %></span> <%= p.title %></a>
+  <% end %>
+  &middot;
+  <% if p = next_post %>
+    <a href="/<%= p.route %>">Next <%= p.date %></span> <%= p.title %></a> &raquo;
+  <% end %>
+</div>
+
+<div id="comments">
+<%= part 'disqus/comments' %>
+</div>
 

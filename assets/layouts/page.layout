@@ -1,8 +1,8 @@
 ---
-layout:  main
-stencil: liquid
+
+layout: main
 
 ---
 
-{{ content }}
+<%= content %>
 
