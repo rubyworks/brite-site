@@ -1,11 +1,11 @@
 ---
-# default authors name
+# default author name
 author: Anonymous
 
 # site's absolute url; generally not used, but needed in some cases
 url: http://___URL___.com
 
-# default stencil engine
+# default template engine/format
 stencil     : rhtml
 
 # default section format
@@ -18,10 +18,10 @@ page_layout : page
 post_layout : post
 
 # location to save pages
-page_slug   : "$path"
+page_route  : ":path"
 
 # location to save posts
-post_slug   : "$post"
+post_route  : ":path"
 
 # where to find layout files
 layout_path : assets/layouts

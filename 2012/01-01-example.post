@@ -1,10 +1,9 @@
-title : My First Post
-date  : 2012-01-01
-tags  : first
-layout: post
+title  : My First Post
+date   : 2012-01-01
+tags   : first
+layout : post
 
 --- markdown
-
 This is a sample post. In this section you use markdown formated text
 b/c that is what we specified after the seciton marker '---'. You could
 have used *textile*, *rdoc* or *html* too. Other sections type are
@@ -12,11 +11,9 @@ supported as well. For instance the following section is a *coderay.ruby*
 section.
 
 --- coderay.ruby
-
 puts "Yea for Brite!"
 
 --- markdown
-
 You can of course editing the documents in this scaffolding
 to suit your needs. What's offered here is just a general
 layout to help get you started.
