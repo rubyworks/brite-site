@@ -1,6 +1,4 @@
----
-
----
+--- html
 
 <% if site.config.google_analytics %>
  

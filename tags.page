@@ -1,10 +1,7 @@
----
+title  : Site Index
+layout : page
 
-title   : Site Index
-layout  : page
-
----
-
+--- html
 <% for tag in site.tags %>
   <div class="">
     <div class="heading">
@@ -13,7 +10,7 @@ layout  : page
   <% for post in site.posts_by_tag[tag] %>
     <div class="" style="margin: 0; padding: 0;">
       <span class="date"><%= post.date %></span>
-      <a class="" href="<%= post.path %>"><%= post.title %></a>
+      <a class="" href="<%= post.url %>"><%= post.title %></a>
     </div>
   <% end %>
   </div>

@@ -13,7 +13,7 @@ section.
 
 --- coderay.ruby
 
-  puts "Yea for Brite!"
+puts "Yea for Brite!"
 
 --- markdown
 

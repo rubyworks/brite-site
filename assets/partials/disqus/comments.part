@@ -1,5 +1,4 @@
----
----
+--- html
 
 <% if config.disqus['shortname'] %>
 
