@@ -89,7 +89,7 @@
 </div>
 </div>
 
-<%= part 'assets/partials/google_analytics' %>
+<%= part 'google/analytics' %>
 
 </body>
 </html>
